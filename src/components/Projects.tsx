@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { projectsData } from "@/data/projects";
-import Github from "../../public/icons/github.svg"
+
 
 export default function Projects() {
   return (
