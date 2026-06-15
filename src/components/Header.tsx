@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full border border-gray-200 bg-white">
-      <div className="mx-auto flex sm:h-13 lg:h-16 max-w-full items-center justify-between px-5">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-15% border border-gray-200 bg-white">
+      <div className="mx-auto flex items-center justify-between px-5">
 
         {/* LEFT: Logo */}
         <Link
           href="#home"
-          className="flex items-left gap-2 text-2xl font-bold text-gray-900"
+          className="flex items-left gap-2 p-3 sm:text-2xl font-bold italic text-gray-900"
         >
           <Code2 className="text-green-600 mt-1" size={22} />
           Santo

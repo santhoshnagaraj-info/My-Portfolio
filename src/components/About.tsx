@@ -6,11 +6,11 @@ const iconMap = { user: User, "map-pin": MapPin, briefcase: Briefcase, mail: Mai
 export default function About() {
   return (
     <section id="about" className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto -px-5 py-10">
         <p className="text-green-600 font-semibold text-sm mb-2">ABOUT ME</p>
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Who am I?</h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-20">
           <div>
             <p className="text-gray-600 mb-6">
               I'm a software developer passionate about building

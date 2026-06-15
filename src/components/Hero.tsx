@@ -6,16 +6,16 @@ import TextType from "@/utils/TextType";
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen w-full bg-gray-70 flex items-center sm:mt-10 lg:mt-15 lg:-mb-10 sm:-mb-15">
-      <div className="max-w-auto w-full lg:px-15 sm:px-10 justify-between -mb-15">
+    <section id="home" className="w-auto h-full bg-gray-70 flex items-center mt-25 -mb-15">
+      <div className="max-w-auto w-full lg:px-15 px-8 justify-between mb-12">
 
-        <div className="grid items-center gap-50 md:grid-cols-2 sm:ml-5 lg:ml-15">
+        <div className="grid items-center gap-15 md:grid-cols-2 ml-13">
 
           <div className="pl-5">
-            <p className="mb-2 font-extralight text-green-600 sm:mt-8 lg:mt-20 sm:text-sm lg:text-base">Hi, I'm</p>
-            <h1 className="mb-4 text-6xl font-extrabold text-gray-900 sm:text-3xl md:text-7xl lg:text-8xl">Santo</h1>
+            <p className="mb-2 font-extralight text-green-600 mt-20 text-base">Hi, I'm</p>
+            <h1 className="mb-4 font-extrabold text-gray-900 text-8xl">Santo</h1>
             <h2 className="mb-4 text-2xl font-semibold"><TextType/></h2>
-            <p className="mb-8 max-w-md text-gray-600 sm:text-sm lg:text-base">I build scalable web applications and backend systems with cleancode and modern technologies.</p>
+            <p className="mb-8 text-gray-600 text-base">I build scalable web applications and backend systems with cleancode and modern technologies.</p>
 
 
             <div className="mb-8 flex items-center gap-4 sm:text-sm lg:text-base">
