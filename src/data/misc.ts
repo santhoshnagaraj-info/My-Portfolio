@@ -1,0 +1,51 @@
+import { SocialLink, StatItem, NavLink, FooterLinkGroup } from "@/types/misc";
+
+export const navLinks: NavLink[] = [
+  { id: "home", label: "Home", href: "#home" },
+  { id: "about", label: "About", href: "#about" },
+  { id: "skills", label: "Skills", href: "#skills" },
+  { id: "projects", label: "Projects", href: "#projects" },
+  { id: "system-design", label: "System Design", href: "#system-design" },
+  { id: "blog", label: "Blog", href: "#blog" },
+  { id: "contact", label: "Contact", href: "#contact" },
+];
+
+export const socialLinks: SocialLink[] = [
+  { id: "github", icon: "github", url: "https://github.com/santo", label: "GitHub" },
+  { id: "linkedin", icon: "linkedin", url: "https://linkedin.com/in/santo", label: "LinkedIn" },
+  { id: "mail", icon: "mail", url: "mailto:santo.dev@example.com", label: "Email" },
+];
+
+export const statsData: StatItem[] = [
+  { id: "projects", icon: "code", value: "15+", label: "Projects Built" },
+  { id: "commits", icon: "git-branch", value: "500+", label: "GitHub Commits" },
+  { id: "technologies", icon: "trophy", value: "20+", label: "Technologies" },
+  { id: "opportunities", icon: "star", value: "Open to", label: "New Opportunities" },
+];
+
+export const footerLinkGroups: FooterLinkGroup[] = [
+  {
+    id: "quick-links",
+    title: "Quick Links",
+    links: [
+      { id: "about", label: "About", href: "#about" },
+      { id: "skills", label: "Skills", href: "#skills" },
+      { id: "projects", label: "Projects", href: "#projects" },
+      { id: "system-design", label: "System Design", href: "#system-design" },
+      { id: "blog", label: "Blog", href: "#blog" },
+      { id: "contact", label: "Contact", href: "#contact" },
+    ],
+  },
+  {
+    id: "resources",
+    title: "Resources",
+    links: [
+      { id: "resume", label: "Resume", href: "#" },
+      { id: "github", label: "My GitHub", href: "https://github.com/santo" },
+      { id: "blog-posts", label: "Blog Posts", href: "#blog" },
+      { id: "tech-stack", label: "Tech Stack", href: "#skills" },
+    ],
+  },
+];
+
+
