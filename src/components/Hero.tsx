@@ -7,7 +7,7 @@ import SocialLink from "@/utils/SocialLink";
 export default function Hero() {
   return (
     <section id="home" className="w-full bg-gray-50 min-h-screen flex items-center">
-      <div className="max-w-7xl w-full mx-auto sm:p-6 lg:px-9 py-16 pt-24 -mb-15 sm:pt-28 sm:pb-4 lg:pt-20 lg:-pb-13">
+      <div className="max-w-7xl w-full mx-auto sm:p-6 px-5 lg:px-9 py-16 pt-24 -mb-15 sm:pt-23 sm:-pb-15 lg:pt-20 lg:-pb-13">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
