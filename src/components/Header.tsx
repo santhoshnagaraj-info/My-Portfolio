@@ -14,7 +14,7 @@ export default function Header() {
           className="flex items-left gap-2 p-3 sm:text-2xl font-bold italic text-gray-900"
         >
           <Code2 className="text-green-600 mt-1" size={22} />
-          Santo
+          Santhosh Nagaraj
         </Link>
 
         {/* MIDDLE: NAV (hidden on mobile) */}
@@ -67,7 +67,7 @@ export default function Header() {
             href="/resume.pdf"
             className="flex items-center justify-center rounded-lg bg-green-700 p-2 text-white hover:bg-green-800 transition md:hidden"
           >
-            <Download size={18} />
+            <Download size={14} />
           </Link>
 
         </div>

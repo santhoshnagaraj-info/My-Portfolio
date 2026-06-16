@@ -7,8 +7,8 @@ import { projectsData } from "@/data/projects";
 export default function Projects() {
   return (
     <section id="projects" className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex items-center justify-between mb-8">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="flex justify-between justify-items-center mb-8">
           <div>
             <p className="text-green-600 font-semibold text-sm mb-2">FEATURED PROJECTS</p>
             <h2 className="text-3xl font-bold text-gray-900">Some things I've built</h2>

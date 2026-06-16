@@ -3,81 +3,82 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import TextType from "@/utils/TextType";
 
-
 export default function Hero() {
   return (
-    <section id="home" className="w-auto h-full bg-gray-70 flex items-center mt-25 -mb-15">
-      <div className="max-w-auto w-full lg:px-15 px-8 justify-between mb-12">
+    <section id="home" className="w-full bg-gray-50 min-h-screen flex items-center">
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-12 py-16 pt-24 pb-10 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-6">
 
-        <div className="grid items-center gap-15 md:grid-cols-2 ml-13">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          <div className="pl-5">
-            <p className="mb-2 font-extralight text-green-600 mt-20 text-base">Hi, I'm</p>
-            <h1 className="mb-4 font-extrabold text-gray-900 text-8xl">Santo</h1>
-            <h2 className="mb-4 text-2xl font-semibold"><TextType/></h2>
-            <p className="mb-8 text-gray-600 text-base">I build scalable web applications and backend systems with cleancode and modern technologies.</p>
+          {/* Left */}
+          <div className="flex flex-col order-2 md:order-1">
+            <p className="mb-2 font-light text-green-600 text-sm sm:text-base">Hi, I'm</p>
+            <h1 className="mb-4 font-extrabold text-gray-900 text-4xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight">
+              Santhosh Nagaraj
+            </h1>
+            <h2 className="mb-4 text-lg sm:text-xl lg:text-2xl font-semibold">
+              <TextType />
+            </h2>
+            <p className="mb-8 text-gray-600 text-sm sm:text-base max-w-md">
+              I build scalable web applications and backend systems with clean
+              code and modern technologies.
+            </p>
 
-
-            <div className="mb-8 flex items-center gap-4 sm:text-sm lg:text-base">
+            <div className="mb-8 flex flex-wrap items-center gap-3 sm:gap-4">
               <Link
-                href="#projects" className="flex items-center gap-2 rounded-lg bg-green-700 px-5 py-3 font-medium text-white transition-colors hover:text-black">View Projects
-                <ArrowRight size={18} />
+                href="#projects"
+                className="flex items-center gap-2 rounded-lg bg-green-700 px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-white hover:bg-green-800 transition-colors"
+              >
+                View Projects <ArrowRight size={18} />
               </Link>
-
               <Link
-                href="#contact" className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-5 py-3 font-medium text-gray-900 transition-colors hover:bg-gray-100">Contact Me
-                <Image src="/icons/mail.svg" alt="Email" width={24} height={24}/>
+                href="#contact"
+                className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-100 shadow-md hover:shadow-lg transition-shadow"
+              >
+                Contact Me
+                <Image src="/icons/mail.svg" alt="Email" width={20} height={20} />
               </Link>
             </div>
 
-
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <Link
                 href="https://github.com/santhoshnagaraj-info"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 border border-gray-500 rounded-lg"
+                className="p-2 border border-gray-300 rounded-lg shadow-sm hover:shadow-md hover:border-green-500 transition-all"
               >
-                <Image
-                  src="/icons/github.svg"
-                  alt="GitHub"
-                  width={24}
-                  height={24}
-                />
+                <Image src="/icons/github.svg" alt="GitHub" width={20} height={20} />
               </Link>
-
               <Link
                 href="https://www.linkedin.com/in/santhoshnagaraj-info/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 border border-gray-500 rounded-lg"
+                className="p-2 border border-gray-300 rounded-lg shadow-sm hover:shadow-md hover:border-green-500 transition-all"
               >
-                <Image
-                  src="/icons/Linkedin.svg"
-                  alt="LinkedIn"
-                  width={24}
-                  height={24}
-                />
+                <Image src="/icons/Linkedin.svg" alt="LinkedIn" width={20} height={20} />
               </Link>
-
-              <Link href="mailto:santhoshnagaraj.info@gmail.com" className="p-2 border border-gray-500 rounded-lg">
-                <Image
-                  src="/icons/mail.svg"
-                  alt="Email"
-                  width={24}
-                  height={24}
-                />
+              <Link
+                href="mailto:santhoshnagaraj.info@gmail.com"
+                className="p-2 border border-gray-300 rounded-lg shadow-sm hover:shadow-md hover:border-green-500 transition-all"
+              >
+                <Image src="/icons/mail.svg" alt="Email" width={20} height={20} />
               </Link>
             </div>
           </div>
 
-          <div className="relative sm:w-40 sm:h-45 lg:w-201 lg:h-190 flex items-center justify-center overflow-hidden lg:-ml-14 lg:-mt-20 opacity-90">
-            <Image src="/images/hero-page-picture.jpg" alt="Santo - Software Engineer" fill priority className="w-full h-full"/></div>
+          {/* Right - Image */}
+          <div className="relative order-1 md:order-2 w-full h-64 sm:h-80 md:h-180 lg:h-171 rounded-2xl opacity-90">
+            <Image
+              src="/images/hero-page-picture.jpg"
+              alt="Santo - Software Engineer"
+              fill
+              priority
+              className="object-cover object-top pb-30"
+            />
           </div>
-        
+
+        </div>
       </div>
     </section>
   );
 }
-
-
