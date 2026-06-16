@@ -40,7 +40,7 @@ export default function About() {
               const Icon = iconMap[info.icon as keyof typeof iconMap];
               return (
                 <div key={info.id} className="flex items-start sm:items-center gap-3 min-w-0">
-                  <Icon size={15} className="text-gray-400 mt-0.5 sm:mt-0 shrink-0" />
+                  <Icon size={16} className="text-gray-400 mt-0.5 sm:mt-0 shrink-0" />
                   <span className="text-gray-500 lg:text-sm text-xs w-24 sm:w-28 shrink-0">{info.label}</span>
                   <span className={`lg:text-sm text-xs font-medium ${info.highlight ? "text-green-600" : "text-gray-500"}`}>
                     {info.value}
