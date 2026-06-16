@@ -11,9 +11,9 @@ export const navLinks: NavLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { id: "github", icon: "github", url: "https://github.com/santhoshnagaraj-info", label: "GitHub" },
-  { id: "linkedin", icon: "linkedin", url: "https://www.linkedin.com/in/santhoshnagaraj-info/", label: "LinkedIn" },
-  { id: "mail", icon: "mail", url: "mailto:santhoshnagaraj.info@gmail.com", label: "Email" },
+  { id: "github", icon: "/icons/github.svg", url: "https://github.com/santhoshnagaraj-info", label: "GitHub" },
+  { id: "linkedin", icon: "/icons/Linkedin.svg", url: "https://www.linkedin.com/in/santhoshnagaraj-info/", label: "LinkedIn" },
+  { id: "mail", icon: "/icons/mail.svg", url: "mailto:santhoshnagaraj.info@gmail.com", label: "Email" },
 ];
 
 export const statsData: StatItem[] = [
