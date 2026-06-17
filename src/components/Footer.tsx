@@ -6,7 +6,7 @@ import SocialLink from "@/utils/SocialLink";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white/70">
+    <footer id="contact" className="bg-gray-900 text-white/70">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center gap-2 text-white font-bold text-lg mb-3">

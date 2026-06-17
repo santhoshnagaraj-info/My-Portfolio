@@ -9,8 +9,8 @@ export const aboutInfoData: AboutInfoItem[] = [
 ];
 
 export const aboutTagsData: AboutTag[] = [
-  { id: "problem-solver", icon: "sparkles", label: "Problem Solver" },
-  { id: "clean-code", icon: "sparkles", label: "Clean Code" },
-  { id: "system-design", icon: "sparkles", label: "System Design" },
-  { id: "continuous-learner", icon: "sparkles", label: "Continuous Learner" },
+  { id: "problem-solver", icon: "lightbulb", label: "Problem Solver" },
+  { id: "clean-code", icon: "code", label: "Clean Code" },
+  { id: "system-design", icon: "blocks", label: "System Design" },
+  { id: "continuous-learner", icon: "book-open", label: "Continuous Learner" },
 ];

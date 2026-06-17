@@ -41,9 +41,9 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     title: "Resources",
     links: [
       { id: "resume", label: "Resume", href: "#" },
-      { id: "github", label: "My GitHub", href: "https://github.com/santo" },
-      { id: "blog-posts", label: "Blog Posts", href: "#blog" },
-      { id: "tech-stack", label: "Tech Stack", href: "#skills" },
+      { id: "github", label: "My GitHub", href: "https://github.com/santhoshnagaraj-info" },
+      { id: "blog", label: "Blog Posts", href: "#blog" },
+      { id: "skills", label: "Tech Stack", href: "#skills" },
     ],
   },
 ];

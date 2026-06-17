@@ -3,7 +3,7 @@ import { Mail, ArrowRight } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="bg-gray-50">
+    <section id="blog" className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="bg-gray-900 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">

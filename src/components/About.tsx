@@ -1,7 +1,7 @@
-import { User, MapPin, Briefcase, Mail, Clock, Sparkles } from "lucide-react";
+import { User, MapPin, Briefcase, Mail, Clock, Lightbulb, Code, Blocks, BookOpen } from "lucide-react";
 import { aboutInfoData, aboutTagsData } from "@/data/about";
 
-const iconMap = { user: User, "map-pin": MapPin, briefcase: Briefcase, mail: Mail, clock: Clock, sparkles: Sparkles };
+const iconMap = { user: User, "map-pin": MapPin, briefcase: Briefcase, mail: Mail, clock: Clock, lightbulb: Lightbulb, code: Code, blocks: Blocks, "book-open": BookOpen };
 
 export default function About() {
   return (
