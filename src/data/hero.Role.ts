@@ -1,7 +1,7 @@
 
 
 const WORDS = [
-  "Software Engineer", "Building scalable web applications","backend systems and modern user experiences."
+  "Software Engineer", "Full Stack Developer", "Building scalable web applications"
 ];
 
 export default WORDS;

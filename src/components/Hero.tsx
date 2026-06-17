@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import TextType from "@/utils/TextType";
 import SocialLink from "@/utils/SocialLink";
 
@@ -33,11 +33,12 @@ export default function Hero() {
                 View Projects <ArrowRight size={18} />
               </Link>
               <Link
-                href="#contact"
+                href="tel:+918525934244"
                 className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-100 shadow-md hover:shadow-lg transition-shadow"
               >
-                Contact Me
-                <Image src="/icons/mail.svg" alt="Email" width={20} height={20} />
+                Contact Me 
+                <Phone size={18} />
+                {/* <Image src="/icons/mail.svg" alt="Email" width={20} height={20} /> */}
               </Link>
             </div>
             <SocialLink/>
