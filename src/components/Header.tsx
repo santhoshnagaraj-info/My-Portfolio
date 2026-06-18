@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Code2, Download } from "lucide-react";
 import { navLinks } from "@/data/misc";
 import Image from "next/image";
+import { RESUME } from "@/constants/resume";
 
 export default function Header() {
   return (
@@ -56,8 +57,8 @@ export default function Header() {
 
           {/* Resume button (desktop) */}
           <a
-            href="/Resume.docx"
-            download="santhosh-nagaraj.docx"
+            href={RESUME.file}
+            download={RESUME.downloadName}
             className="hidden md:flex items-center gap-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 transition"
           >
             Resume <Download size={14} />
@@ -65,8 +66,8 @@ export default function Header() {
 
           {/* MOBILE: Only download icon */}
           <a
-            href="/Resume.docx"
-            download="santhosh-nagaraj.docx"
+            href={RESUME.file}
+            download={RESUME.downloadName}
             className="flex items-center justify-center rounded-lg bg-green-700 p-2 text-white hover:bg-green-800 transition md:hidden"
           >
             <Download size={14} />
