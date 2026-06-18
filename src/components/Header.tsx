@@ -13,7 +13,7 @@ export default function Header() {
           href="#home"
           className="flex items-left gap-2 p-3 sm:text-2xl font-bold italic text-gray-900"
         >
-          <Code2 className="text-green-600 mt-1" size={22} />
+          <Code2 className="text-green-600 sm:mt-0 lg:mt-1" size={22} />
           Santhosh Nagaraj
         </Link>
 
@@ -55,20 +55,22 @@ export default function Header() {
           </div>
 
           {/* Resume button (desktop) */}
-          <Link
-            href="/resume.pdf"
+          <a
+            href="/Resume.docx"
+            download="santhosh-nagaraj.docx"
             className="hidden md:flex items-center gap-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 transition"
           >
             Resume <Download size={14} />
-          </Link>
+          </a>
 
           {/* MOBILE: Only download icon */}
-          <Link
-            href="/resume.pdf"
+          <a
+            href="/Resume.docx"
+            download="santhosh-nagaraj.docx"
             className="flex items-center justify-center rounded-lg bg-green-700 p-2 text-white hover:bg-green-800 transition md:hidden"
           >
             <Download size={14} />
-          </Link>
+          </a>
 
         </div>
       </div>
