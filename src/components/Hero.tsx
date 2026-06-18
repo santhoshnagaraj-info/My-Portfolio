@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="relative order-1 md:order-2 w-full lg:w-174 sm:h-80 lg:h-172 rounded-2xl opacity-90 ">
             <Image
               src="/images/hero-page-picture.jpg"
-              alt="Santo - Software Engineer"
+              alt="Santhosh Nagaraj - Software Engineer"
               fill
               priority
               className="top-0 -mt-9"

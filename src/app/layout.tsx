@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Santhosh Nagaraj",
-  description: "Full Stack and software developer Engineer",
+  title: "Santhosh Nagaraj | Full Stack Developer | Software Developer Engineer",
+  description: "Full Stack Developer specializing in Node.js, Next.js, MongoDB and scalable web applications.",
 };
 
 export default function RootLayout({
