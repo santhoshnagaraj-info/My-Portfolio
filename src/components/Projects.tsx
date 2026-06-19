@@ -6,7 +6,7 @@ import { techIconMap } from "@/constants/tech-icons";
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-white ">
+    <section id="projects" className="bg-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="flex justify-between justify-items-center mb-8">
           <div>
@@ -20,12 +20,12 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-3 gap-6 ">
           {projectsData.map((project) => (
-            <div key={project.id} className="border border-gray-100 rounded-xl overflow-hidden shadow-md transition-shadow">
+            <div key={project.id} className="border border-gray-100 rounded-xl overflow-hidden hover:scale-102 shadow-md transition-shadow">
               <div className="relative h-44 bg-gray-800">
                 <Image src={project.image} alt={project.title} fill className="object-cover" />
               </div>
 
-              <div className="p-5">
+              <div className="p-5 ">
                 <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-sm text-gray-500 mb-4">{project.description}</p>
 
@@ -45,7 +45,7 @@ export default function Projects() {
                   <Link href={project.githubUrl} target="_blank" className="flex items-center gap-1.5">
                     <Image src="/icons/github.svg" alt="GitHub" width={30} height={30} className="p-1 border border-gray-700 rounded-md"/>
                   </Link>
-                  <Link href={project.liveUrl} target="_blank" className="flex items-center gap-1.5 text-green-600 font-medium hover:gap-2 transition-all">
+                  <Link href={project.liveUrl} target="_blank" className="flex items-center gap-1.5 font-medium hover:gap-2 transition-all">
                     Live Demo <ExternalLink size={14} />
                   </Link>
                 </div>
