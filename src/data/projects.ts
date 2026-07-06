@@ -28,6 +28,19 @@ export const projectsData: Project[] = [
     liveUrl: "https://fitflow-gym-coral.vercel.app/",
   },
   {
+    id: "periyaflavours-restaurant",
+    title: "periyaflavours-restaurant",
+    description: "Production-grade periyaflavours-restaurant app with order processing.",
+    image: "/projects/fitflow-gym-coral.jpeg",
+    technologies: [
+      { id: "nextjs", name: "Next.js", icon: "nextjs" },
+      { id: "react", name: "React", icon: "react" },
+      { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
+    ],
+    githubUrl: "https://github.com/santhoshnagaraj-info/PeriyaFlavours-Temp",
+    liveUrl: "https://periyaflavours-restaurant.vercel.app/",
+  },
+  {
     id: "devops-monitoring-platform",
     title: "DevOps Monitoring Platform",
     description: "Monitoring and observability platform with metrics, logs, alerts and beautiful dashboards.",
