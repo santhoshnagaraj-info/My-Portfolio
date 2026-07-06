@@ -18,14 +18,14 @@ export const projectsData: Project[] = [
     id: "fitflow-gym",
     title: "FitFlow_Gym",
     description: "Production-grade Fitness app with inventory, payments, order processing and analytics.",
-    image: "/projects/fitflow-gym-carol.jpeg",
+    image: "/projects/fitflow-gym-coral.jpeg",
     technologies: [
       { id: "nextjs", name: "Next.js", icon: "nextjs" },
       { id: "react", name: "React", icon: "react" },
       { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
     ],
     githubUrl: "https://github.com/santhoshnagaraj-info/FitFlow-Gym",
-    liveUrl: "#",
+    liveUrl: "https://fitflow-gym-coral.vercel.app/",
   },
   {
     id: "devops-monitoring-platform",
