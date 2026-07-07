@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     id: "periyaflavours-restaurant",
     title: "periyaflavours-restaurant",
     description: "Production-grade periyaflavours-restaurant app with order processing.",
-    image: "/projects/fitflow-gym-coral.jpeg",
+    image: "/projects/periyaflavours-restaurant.png",
     technologies: [
       { id: "nextjs", name: "Next.js", icon: "nextjs" },
       { id: "react", name: "React", icon: "react" },
