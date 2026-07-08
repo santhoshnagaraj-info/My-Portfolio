@@ -1,6 +1,6 @@
 // src/constants/resume.ts
 
 export const RESUME = {
-  file: "/Santhosh_Nagaraj_19062026.pdf",
-  downloadName: "Santhosh_FullStack_19062026.pdf",
+  file: "/Document-1.pdf",
+  downloadName: "Resume_Santhosh_FullStack_08072026.pdf",
 };
