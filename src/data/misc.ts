@@ -1,5 +1,8 @@
+
+import { ReposCountData } from "@/lib/gitHubHandle";
 import { SocialLink, StatItem, NavLink, FooterLinkGroup } from "@/types/misc";
 
+const ReposCountDatavar = ReposCountData;
 export const navLinks: NavLink[] = [
   { id: "home", label: "Home", href: "#home" },
   { id: "about", label: "About", href: "#about" },
@@ -17,7 +20,7 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const statsData: StatItem[] = [
-  { id: "projects", icon: "code", value: "15+", label: "Projects Built" },
+  { id: "projects", icon: "code", value: ReposCountDatavar, label: "Projects Built" },
   { id: "commits", icon: "git-branch", value: "500+", label: "GitHub Commits" },
   { id: "technologies", icon: "trophy", value: "20+", label: "Technologies" },
   { id: "opportunities", icon: "star", value: "Open to", label: "New Opportunities" },

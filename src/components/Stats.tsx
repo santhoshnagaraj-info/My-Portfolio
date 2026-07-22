@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Code, GitBranch, Trophy, Star } from "lucide-react";
 import { statsData } from "@/data/misc";
 
+
 const iconMap = { code: Code, "git-branch": GitBranch, trophy: Trophy, star: Star };
 
 export default function Stats() {
