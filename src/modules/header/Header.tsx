@@ -1,19 +1,38 @@
 import Link from "next/link";
 import { Code2, Download } from "lucide-react";
-import { navLinks } from "@/data/misc";
 import Image from "next/image";
-import { RESUME } from "@/constants/resume";
+
+
+interface NavLink {
+  id: string;
+  label: string;
+  href: string;
+}
+
+// src/constants/resume.ts
+
+export const RESUME = {
+  file: "/resume/Santhosh Nagaraj_Software Engineer_20260807.pdf",
+  downloadName: "Santhosh Nagaraj_Software Engineer_20260807.pdf",
+};
+
+const navLinks: NavLink[] = [
+  { id: "home", label: "Home", href: "#home" },
+  { id: "about", label: "About", href: "#about" },
+  { id: "skills", label: "Skills", href: "#skills" },
+  { id: "projects", label: "Projects", href: "#projects" },
+  { id: "system-design", label: "System Design", href: "#system-design" },
+  { id: "blog", label: "Blog", href: "#blog" },
+  { id: "contact", label: "Contact", href: "#contact" },
+];
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full h-15% border border-gray-200 bg-white">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-15% border border-gray-200 bg-transparent backdrop-blur-sm">
       <div className="mx-auto flex items-center justify-between px-5">
 
         {/* LEFT: Logo */}
-        <Link
-          href="#home"
-          className="flex items-left gap-2 p-3 sm:text-2xl font-bold italic text-gray-900"
-        >
+        <Link href="#home" className="flex items-left gap-2 p-3 sm:text-2xl font-bold italic text-gray-900">
           <Code2 className="text-green-600 sm:mt-0 lg:mt-1" size={22} />
           Santhosh Nagaraj
         </Link>
@@ -70,7 +89,7 @@ export default function Header() {
             download={RESUME.downloadName}
             className="flex items-center justify-center rounded-lg bg-green-700 p-2 text-white hover:bg-green-800 transition md:hidden"
           >
-            <Download size={14} />
+            <Download size={14}/>
           </a>
 
         </div>
@@ -78,3 +97,5 @@ export default function Header() {
     </header>
   );
 }
+
+

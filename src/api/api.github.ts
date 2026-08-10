@@ -1,13 +1,29 @@
 
+export const github_url = "https://api.github.com";
+export const github_name = "santhoshnagaraj-info";
 
-  // Fetch repos
-  const GitHubMainUrl = await fetch(
-    "https://api.github.com/users/santhoshnagaraj-info/repos"
-  );
-export  const CountRepos = await GitHubMainUrl.json();
+export async function getGithubReposCount(): Promise<number> {
+  const response = await fetch(`${github_url}/users/${github_name}`);
 
-export async function getGithubData() {
+  if (!response.ok) {
+    throw new Error("Failed to fetch GitHub data");
+  }
 
-
-
+  const data = await response.json();
+  return data.public_repos;
 }
+
+export async function getGithubCommitsCount(): Promise<number> {
+  const response = await fetch(
+    `${github_url}/search/commits?q=author:${github_name}`
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch GitHub commits");
+  }
+
+  const data = await response.json();
+  return data.total_count;
+}
+
+

@@ -1,8 +1,48 @@
 
 import Link from "next/link";
 import { Code2, MapPin, ArrowUp } from "lucide-react";
-import { footerLinkGroups } from "@/data/misc";
 import SocialLink from "@/utils/SocialLink";
+
+
+
+
+export interface NavLink {
+  id: string;
+  label: string;
+  href: string;
+}
+
+export interface FooterLinkGroup {
+  id: string;
+  title: string;
+  links: NavLink[];
+}
+
+
+export const footerLinkGroups: FooterLinkGroup[] = [
+  {
+    id: "quick-links",
+    title: "Quick Links",
+    links: [
+      { id: "about", label: "About", href: "#about" },
+      { id: "skills", label: "Skills", href: "#skills" },
+      { id: "projects", label: "Projects", href: "#projects" },
+      { id: "system-design", label: "System Design", href: "#system-design" },
+      { id: "blog", label: "Blog", href: "#blog" },
+      { id: "contact", label: "Contact", href: "#contact" },
+    ],
+  },
+  {
+    id: "resources",
+    title: "Resources",
+    links: [
+      { id: "resume", label: "Resume", href: "#" },
+      { id: "github", label: "My GitHub", href: "https://github.com/santhoshnagaraj-info" },
+      { id: "blog", label: "Blog Posts", href: "#blog" },
+      { id: "skills", label: "Tech Stack", href: "#skills" },
+    ],
+  },
+];
 
 export default function Footer() {
   return (

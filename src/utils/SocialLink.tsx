@@ -1,16 +1,39 @@
-import { socialLinks } from "@/data/misc";
-import Link from "next/link";
 import Image from "next/image";
+import { socialLinks, type SocialLink } from "@/config/social-links";
 
+interface SocialLinksProps {
+  links?: string[];
+  className?: string;
+  iconSize?: number;
+}
 
-export default function SocialLink() {
-    return(  
-        <div className="flex items-center gap-3">
-            {socialLinks.map((link) => (
-                <Link key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-600 bg-gray-50 rounded-lg shadow-sm hover:shadow-md hover:border-green-500 transition-all ">
-                    <Image src={link.icon} alt={link.label} width={20} height={20} className="bg-gray-50"/>
-                </Link>
-            ))}
-        
-        </div>
-)}
+export default function SocialLinks({
+  links,
+  className = "",
+  iconSize = 24,
+}: SocialLinksProps) {
+  const selectedLinks: SocialLink[] = links
+    ? socialLinks.filter((link) => links.includes(link.id))
+    : socialLinks;
+
+  return (
+    <div className={`flex items-center gap-4 ${className}`}>
+      {selectedLinks.map((link) => (
+        <a
+          key={link.id}
+          href={link.url}
+          target={link.id === "mail" ? undefined : "_blank"}
+          rel={link.id === "mail" ? undefined : "noopener noreferrer"}
+          aria-label={link.label}
+        >
+          <Image
+            src={link.icon}
+            alt={link.label}
+            width={iconSize}
+            height={iconSize}
+          />
+        </a>
+      ))}
+    </div>
+  );
+}

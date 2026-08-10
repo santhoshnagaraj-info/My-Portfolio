@@ -1,24 +1,27 @@
+import Skills from "@/modules/skills/Skills";
 
-
-import Hero from "@/components/Hero";
-import About from "@/components/About"
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects"
-import Stats from "@/components/Stats"
-import CTA from "@/components/CTA";
+import Hero from "@/modules/hero/Hero";
+import About from "@/modules/aboutme/About";
+import Projects from "@/modules/projects/Projects";
+import Stats from "@/modules/archive.CTA/Stats";
+import CTA from "@/modules/archive.CTA/CTA";
 
 
 export default function Home() {
   return (
     <>
       <main className="overflow-x-hidden">
-        <Hero />
-        <About/>
+        <div className="">
+          <Hero />
+          <About/>
+        </div>
         <Skills/>
         <Projects/>
-        <Stats/>
         <CTA/>
+        <Stats/>
       </main>
     </>
   );
 }
+
+// dark-coding.1920x1080.webm
