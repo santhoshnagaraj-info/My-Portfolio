@@ -1,45 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
-// constants/tech-icons.ts
-
+// constants/tech-icons.ts  
 
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker, SiKubernetes, SiPrometheus, SiGrafana, SiReact} from "react-icons/si";
 
 
 export const techIconMap = {
-  nextjs: {
-    icon: SiNextdotjs,
-    color: "#000000",
-  },
-  react: {
-    icon: SiReact,
-    color: "#61DAFB",
-  },
-  typescript: {
-    icon: SiTypescript,
-    color: "#3178C6",
-  },
-  tailwindcss: {
-    icon: SiTailwindcss,
-    color: "#06B6D4",
-  },
-  docker: {
-    icon: SiDocker,
-    color: "#2496ED",
-  },
-  kubernetes: {
-    icon: SiKubernetes,
-    color: "#326CE5",
-  },
-  prometheus: {
-    icon: SiPrometheus,
-    color: "#E6522C",
-  },
-  grafana: {
-    icon: SiGrafana,
-    color: "#F46800",
-  },
+  nextjs: { icon: SiNextdotjs, color: "#000000",},
+  react: { icon: SiReact, color: "#61DAFB",},
+  typescript: { icon: SiTypescript, color: "#3178C6",},
+  tailwindcss: { icon: SiTailwindcss, color: "#06B6D4",},
+  docker: { icon: SiDocker, color: "#2496ED",},
+  kubernetes: { icon: SiKubernetes, color: "#326CE5",},
+  prometheus: { icon: SiPrometheus, color: "#E6522C",},
+  grafana: { icon: SiGrafana, color: "#F46800",},
 } as const;
 
 export type TechIcon = keyof typeof techIconMap;
@@ -61,19 +36,6 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
-  {
-    id: "ai-system-design-simulator",
-    title: "AI System Design Simulator",
-    description: "AI-powered platform to simulate system design interviews with smart feedback and scoring.",
-    image: "/projects/ai-system-design.png",
-    technologies: [
-      { id: "nextjs", name: "Next.js", icon: "nextjs" },
-      { id: "typescript", name: "TypeScript", icon: "typescript" },
-      { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
-    ],
-    githubUrl: "https://github.com/santo/ai-system-design-simulator",
-    liveUrl: "#",
-  },
   {
     id: "fitflow-gym",
     title: "FitFlow_Gym",
@@ -114,6 +76,19 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/santo/devops-monitoring-platform",
     liveUrl: "#",
   },
+    {
+    id: "ai-system-design-simulator",
+    title: "AI System Design Simulator",
+    description: "AI-powered platform to simulate system design interviews with smart feedback and scoring.",
+    image: "/projects/ai-system-design.png",
+    technologies: [
+      { id: "nextjs", name: "Next.js", icon: "nextjs" },
+      { id: "typescript", name: "TypeScript", icon: "typescript" },
+      { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
+    ],
+    githubUrl: "https://github.com/santo/ai-system-design-simulator",
+    liveUrl: "#",
+  },
 ];
 
 export default function Projects() {
@@ -130,7 +105,7 @@ export default function Projects() {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 ">
+        <div className="p-5 grid md:grid-cols-3 gap-6 ">
           {projectsData.map((project) => (
             <div key={project.id} className="border border-gray-100 rounded-xl overflow-hidden hover:scale-105 shadow-md transition-shadow">
               <div className="relative h-44 bg-gray-800">
@@ -170,3 +145,7 @@ export default function Projects() {
     </section>
   );
 }
+
+
+
+

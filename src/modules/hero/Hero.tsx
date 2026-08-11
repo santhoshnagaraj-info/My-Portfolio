@@ -23,16 +23,14 @@ function SocialLink() {
     return(  
         <div className="py-4 flex items-center gap-3">
             {socialLinks.map((link) => (
-                <Link key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-600 bg-gray-400 hover:bg-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all ">
+                <Link key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-600 bg-gray-300 hover:bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all ">
                     <Image src={link.icon} alt={link.label} width={20} height={20} className="backdrop-blur-lg"/>
                 </Link>
             ))}
         </div>
 )}
 
-const WORDS = [
-  "Software Engineer", "Production-grade Full Stack Developer", "Building scalable web applications"
-];
+const WORDS = [ "Software Engineer", "Production-grade Full Stack Developer", "Building scalable web applications" ];
 
 
 const TYPE_SPEED = 100;
@@ -97,21 +95,21 @@ function TextType() {
 
 export default function Hero() {
   return (
-    <section id="home" className="flex items-center w-full h-screen mt-[3%] bg-transparent backdrop-blur-md border border-gray-400">
+    <section id="home" className="flex items-center w-full h-screen mt-[3%] bg-transparent backdrop-blur-md border-b border-gray-400">
         <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-[60%_40%]  items-center px-[10%]">
 
           {/* Left */}
           <div className="flex flex-col order-2 md:order-1 ">
-            <p className="py-5 font-light text-green-600 text-sm sm:text-base">Hi, I'm</p>
-            <h1 className="py-3 font-extrabold text-gray-900 text-4xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight"> Santhosh Nagaraj </h1>
-            <h2 className="py-3 text-lg sm:text-xl lg:text-2xl font-semibold"> <TextType /> </h2>
-            <p className="py-5 text-gray-600 text-sm sm:text-base w-[75%]"> I build scalable web applications and backend systems with clean code and modern technologies. </p>
+            <p className="py-5 text-md font-light text-green-600">Hi, I'm</p>
+            <h1 className="py-3 text-5xl lg:text-7xl xl:text-8xl  font-extrabold text-gray-900 leading-tight"> Santhosh Nagaraj </h1>
+            <h2 className="py-3 text-2xl sm:text-lg lg:text-3xl font-semibold h-15"> <TextType /> </h2>
+            <p className="py-5 mt-5 text-gray-600 text-sm sm:text-base w-[90%]"> I build scalable web applications and backend systems with clean code and modern technologies. </p>
 
-            <div className="py-4 flex flex-wrap items-center gap-3 sm:gap-4">
-              <Link href="#projects" className=" flex items-center gap-2 rounded-lg bg-green-700 px-4 sm:px-5 sm:py-3 text-sm sm:text-base font-medium  hover:bg-green-800 transition-colors" >
+            <div className="py-4 flex flex-wrap items-center gap-4">
+              <Link href="#projects" className="px-5 py-3 text-sm sm:text-base font-medium flex items-center gap-2 rounded-lg bg-green-600 hover:bg-green-500 transition-colors" >
                 View Projects <ArrowRight size={18} />
               </Link>
-              <Link href="tel:+918525934244" className=" flex items-center gap-2 rounded-lg border border-gray-300 px-4 sm:px-5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-100 shadow-md hover:shadow-lg transition-shadow ">
+              <Link href="tel:+918525934244" className="px-5 py-3 text-sm sm:text-base font-medium text-gray-900 flex items-center gap-2 rounded-lg border border-gray-400 bg-gray-300 hover:bg-gray-200 shadow-md hover:shadow-lg transition-shadow ">
                 Contact Me  <Phone size={18} />
               </Link>
             </div>
@@ -120,7 +118,7 @@ export default function Hero() {
           </div>
 
           {/* Right - Image */}
-          <div className="relative order-1 md:order-2 w-full p-[1%] h-screen rounded-2xl ">
+          <div className="sm:hidden relative order-1 hidden w-full md:order-2 md:block p-[1%] h-screen rounded-2xl ">
             <Image src="/images/Hero-removebg.png" alt="Santhosh Nagaraj - Software Engineer" fill priority className="top-0 bottom-0" />
           </div>
 
@@ -128,4 +126,5 @@ export default function Hero() {
     </section>
   );
 }
+
 

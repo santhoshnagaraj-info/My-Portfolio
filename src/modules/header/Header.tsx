@@ -75,11 +75,7 @@ export default function Header() {
           </div>
 
           {/* Resume button (desktop) */}
-          <a
-            href={RESUME.file}
-            download={RESUME.downloadName}
-            className="hidden md:flex items-center gap-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 transition"
-          >
+          <a href={RESUME.file} download={RESUME.downloadName} className="hidden md:flex items-center gap-2 rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 transition">
             Resume <Download size={14} />
           </a>
 
