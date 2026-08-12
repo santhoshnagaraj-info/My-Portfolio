@@ -4,31 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
+import SocialLinks from "@/utils/SocialLink";
 
-
-interface SocialLink {
-  id: string;
-  icon: string;
-  url: string;
-  label: string;
-}
-
-const socialLinks: SocialLink[] = [
-  { id: "github", icon: "/icons/github.svg", url: "https://github.com/santhoshnagaraj-info", label: "GitHub" },
-  { id: "linkedin", icon: "/icons/Linkedin.svg", url: "https://www.linkedin.com/in/santhoshnagaraj-info/", label: "LinkedIn" },
-  { id: "mail", icon: "/icons/mail.svg", url: "mailto:santhoshnagaraj.info@gmail.com", label: "Email" },
-];
-
-function SocialLink() {
-    return(  
-        <div className="py-4 flex items-center gap-3">
-            {socialLinks.map((link) => (
-                <Link key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-600 bg-gray-300 hover:bg-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all ">
-                    <Image src={link.icon} alt={link.label} width={20} height={20} className="backdrop-blur-lg"/>
-                </Link>
-            ))}
-        </div>
-)}
 
 const WORDS = [ "Software Engineer", "Production-grade Full Stack Developer", "Building scalable web applications" ];
 
@@ -114,7 +91,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            <SocialLink/>
+            <SocialLinks className="mt-4" iconSize={24} />
           </div>
 
           {/* Right - Image */}

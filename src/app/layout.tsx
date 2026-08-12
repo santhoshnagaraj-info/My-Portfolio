@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/modules/header/Header";
 import Footer from "@/modules/footer/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Santhosh Nagaraj | Full Stack Developer | Software Developer Engineer",
@@ -25,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <Header/>
         {children}
