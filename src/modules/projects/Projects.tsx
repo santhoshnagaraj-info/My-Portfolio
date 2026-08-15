@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 // constants/tech-icons.ts  
 
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker, SiKubernetes, SiPrometheus, SiGrafana, SiReact} from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker, SiKubernetes, SiPrometheus, SiGrafana, } from "react-icons/si";
 
 
 export const techIconMap = {
@@ -11,6 +11,7 @@ export const techIconMap = {
   react: { icon: SiReact, color: "#61DAFB",},
   typescript: { icon: SiTypescript, color: "#3178C6",},
   tailwindcss: { icon: SiTailwindcss, color: "#06B6D4",},
+
   docker: { icon: SiDocker, color: "#2496ED",},
   kubernetes: { icon: SiKubernetes, color: "#326CE5",},
   prometheus: { icon: SiPrometheus, color: "#E6522C",},
@@ -36,6 +37,19 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+    {
+    id: "tech-armor",
+    title: "Tech-Armor",
+    description: "Built a full-stack e-commerce application as a monorepo, implementing a TypeScript Express API with Controller-Service-Repository architecture, Zod validation, and Mongoose for MongoDB data access.",
+    image: "/projects/tech-armor-ochre.png",
+    technologies: [
+      { id: "nextjs", name: "Next.js", icon: "nextjs" },
+      { id: "react", name: "React", icon: "react" },
+      { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
+    ],
+    githubUrl: "https://github.com/santhoshnagaraj-info/Tech-Armor",
+    liveUrl: "https://tech-armor-ochre.vercel.app/",
+  },
   {
     id: "fitflow-gym",
     title: "FitFlow_Gym",
