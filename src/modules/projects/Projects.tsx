@@ -3,19 +3,39 @@ import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 // constants/tech-icons.ts  
 
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker, SiKubernetes, SiPrometheus, SiGrafana, } from "react-icons/si";
-
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiDocker,
+  SiKubernetes,
+  SiPrometheus,
+  SiGrafana,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGit,
+  SiGithub,
+} from "react-icons/si";
 
 export const techIconMap = {
-  nextjs: { icon: SiNextdotjs, color: "#000000",},
-  react: { icon: SiReact, color: "#61DAFB",},
-  typescript: { icon: SiTypescript, color: "#3178C6",},
-  tailwindcss: { icon: SiTailwindcss, color: "#06B6D4",},
+  nextjs: { icon: SiNextdotjs, color: "#000000" },
+  react: { icon: SiReact, color: "#61DAFB" },
+  typescript: { icon: SiTypescript, color: "#3178C6" },
+  tailwindcss: { icon: SiTailwindcss, color: "#06B6D4" },
 
-  docker: { icon: SiDocker, color: "#2496ED",},
-  kubernetes: { icon: SiKubernetes, color: "#326CE5",},
-  prometheus: { icon: SiPrometheus, color: "#E6522C",},
-  grafana: { icon: SiGrafana, color: "#F46800",},
+  node: { icon: SiNodedotjs, color: "#339933" },
+  express: { icon: SiExpress, color: "#000000" },
+  mongodb: { icon: SiMongodb, color: "#47A248" },
+
+  git: { icon: SiGit, color: "#F05032" },
+  github: { icon: SiGithub, color: "#181717" },
+
+  docker: { icon: SiDocker, color: "#2496ED" },
+  kubernetes: { icon: SiKubernetes, color: "#326CE5" },
+  prometheus: { icon: SiPrometheus, color: "#E6522C" },
+  grafana: { icon: SiGrafana, color: "#F46800" },
 } as const;
 
 export type TechIcon = keyof typeof techIconMap;
@@ -46,6 +66,10 @@ export const projectsData: Project[] = [
       { id: "nextjs", name: "Next.js", icon: "nextjs" },
       { id: "react", name: "React", icon: "react" },
       { id: "tailwindcss", name: "Tailwind CSS", icon: "tailwindcss" },
+
+      { id: "node", name: "Node.js", icon: "node" },
+      { id: "express", name: "Express", icon: "express" },
+      { id: "mongodb", name: "MongoDB", icon: "mongodb" },
     ],
     githubUrl: "https://github.com/santhoshnagaraj-info/Tech-Armor",
     liveUrl: "https://tech-armor-ochre.vercel.app/",
