@@ -12,8 +12,8 @@ interface NavLink {
 // src/constants/resume.ts
 
 export const RESUME = {
-  file: "/resume/Santhosh Nagaraj_Software Engineer_20260807.pdf",
-  downloadName: "Santhosh Nagaraj_Software Engineer_20260807.pdf",
+  file: "/resume/Santhosh Nagaraj_Full_Stack_Developer_Resume.pdf",
+  downloadName: "Santhosh Nagaraj_Full_Stack_Developer_Resume.pdf",
 };
 
 const navLinks: NavLink[] = [
